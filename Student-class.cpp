@@ -175,3 +175,8 @@ void Student::deallocateArray(Student*& arr, int numStudents, int numTests)
     delete[] arr;
     arr = nullptr;
 }
+
+Student::~Student()
+{
+    delete[] tests;
+}
