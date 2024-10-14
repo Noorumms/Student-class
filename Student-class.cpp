@@ -121,6 +121,21 @@ void Student::displayOneStudent(const Student& st, int numTests) {
     cout << "\nGrade: " << st.grade << '\n';
 }
 
+void Student::displayClassAverage(Student* arr, int numStudents) {
+    double totalAverage = 0;
+
+    // Sum up the average of all students
+    for (int i = 0; i < numStudents; i++) {
+        totalAverage += arr[i].average;
+    }
+
+    // Calculate class average
+    double classAverage = totalAverage / numStudents;
+
+    // Display class average
+    cout << "\nClass Average: " << classAverage << '\n';
+}
+
 void Student::displayStudents(Student* arr, int numStudents, int numTests)
 {
     for (int i = 0; i < numStudents; ++i)

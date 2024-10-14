@@ -23,6 +23,7 @@ public:
     Student* getBestStudent(Student* arr, int numStudents);
     void displayBestStudent(Student* arr, int numStudents, int numTests);
     void deallocateArray(Student*& arr, int numStudents, int numTests);
+    void displayClassAverage(Student* arr, int numStudents);
     ~Student();
 };
 
